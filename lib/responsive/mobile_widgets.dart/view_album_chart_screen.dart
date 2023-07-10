@@ -3,14 +3,20 @@ import 'package:terseer_music_player/responsive/mobile_widgets.dart/appbar.dart'
 import 'package:terseer_music_player/responsive/mobile_widgets.dart/mobile_theme.dart';
 import 'package:terseer_music_player/responsive/mobile_widgets.dart/tomorrow_tunes_buttons.dart';
 
+import 'drawer.dart';
+
 class ViewAlbum extends StatelessWidget {
   const ViewAlbum({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Builder(builder: (context) {
+        return const Drawer(
+            backgroundColor: Color(0xff1A1E1F), child: CustomDrawer());
+      }),
       extendBodyBehindAppBar: true,
-      appBar: const MyAppBar(),
+      appBar: const DolcherMoreAppBar(),
       body: Stack(
         children: [
           SizedBox(

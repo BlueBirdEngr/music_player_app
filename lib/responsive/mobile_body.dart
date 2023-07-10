@@ -18,14 +18,13 @@ class _MobileScaffoldState extends State<MobileScaffold> {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
 
     // return const Placeholder();
     return Scaffold(
       backgroundColor: const Color(0xff1e1e1e),
       drawer: const Drawer(
           backgroundColor: Color(0xff1A1E1F), child: CustomDrawer()),
-      appBar: const MyAppBar(),
+      appBar: const DolcherMoreAppBar(),
       body: Stack(
         children: [
           ListView(

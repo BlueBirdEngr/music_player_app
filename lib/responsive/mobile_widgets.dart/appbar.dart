@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
+class DolcherMoreAppBar extends StatelessWidget implements PreferredSizeWidget {
   static final _appBar = AppBar();
 
   @override
   Size get preferredSize => _appBar.preferredSize;
-  const MyAppBar({
+  const DolcherMoreAppBar({
     super.key,
   });
 

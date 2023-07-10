@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:terseer_music_player/homepage.dart';
 import 'package:terseer_music_player/model.dart';
+import 'package:terseer_music_player/responsive/mobile_widgets.dart/my_collection.dart';
 import 'package:terseer_music_player/responsive/mobile_widgets.dart/view_album_chart_screen.dart';
 
 class CustomDrawer extends StatefulWidget {
@@ -64,7 +65,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
         break;
       case 1:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => const HomePage(),
+          builder: (context) => const Collection(),
         ));
         break;
       case 2:
